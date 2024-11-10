@@ -34,7 +34,7 @@ input.classList.toggle("input-error")
 const button = document.querySelector("button")
 //Modificar as propriedades CSS do elemento
 button.style.backgroundColor = "blue"
-*/
+
 //seleciona o ul
 const guests = document.querySelector("ul")
 //seleciona o li
@@ -54,3 +54,19 @@ newGuest.append(guestName)
 
 //adiciona no HTML
 guests.append(newGuest)
+
+//sempre que carrega a pagina ele aparece
+window.addEventListener("load",()=>{
+    console.log("A página foi carregada")
+})
+addEventListener("click",(e)=>{
+    e.preventDefault()
+    console.log(e)
+})
+*/
+const btn = document.querySelector("button")
+const body = document.querySelector("body")
+btn.addEventListener("click",(e) =>{
+    e.preventDefault()
+    body.style.backgroundColor = "red"
+})
