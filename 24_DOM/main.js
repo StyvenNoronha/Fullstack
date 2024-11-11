@@ -63,10 +63,36 @@ addEventListener("click",(e)=>{
     e.preventDefault()
     console.log(e)
 })
-*/
+//quando aperta o botão muda para a cor vermelho
 const btn = document.querySelector("button")
 const body = document.querySelector("body")
 btn.addEventListener("click",(e) =>{
     e.preventDefault()
     body.style.backgroundColor = "red"
 })
+
+
+
+const form = document.querySelector("form")
+
+//quando aperta um botão do form aparece a mensagem
+//so funciona no ultimo que voce criou
+form.onsubmit = (event)=>{
+    event.preventDefault()
+    alert("voce fez submit no form")
+}
+
+
+
+const input = document.querySelector("input")
+//keydown - quando uma tecla é pressionada, INCLUINDO O CTRL,SHIFT
+input.addEventListener("keydown",(event)=>{
+    console.log(event.key)
+})
+
+const input = document.querySelector("input")
+//keypress - quando um tecla do tipo caractere pe pressionada
+input.addEventListener("keypress",(event)=>{
+    console.log(event.key)
+})
+    */
